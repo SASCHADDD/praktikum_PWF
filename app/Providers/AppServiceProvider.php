@@ -5,6 +5,10 @@ namespace App\Providers;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * membuat AppServiceProvider untuk mendefinisikan gate 'manage-product'
+ *  yang hanya dapat diakses oleh pengguna dengan peran 'admin'
+ */
 class AppServiceProvider extends ServiceProvider
 {
     /**
