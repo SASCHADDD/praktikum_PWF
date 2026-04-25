@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
+/**
+ * membuat controller category untuk mengelola data kategori produk dengan fitur CRUD (Create, Read, Update, Delete)
+ * yang memungkinkan pengguna untuk menambahkan, melihat, mengedit, dan menghapus kategori produk
+ */
 class CategoryController extends Controller
 {
     public function index()
