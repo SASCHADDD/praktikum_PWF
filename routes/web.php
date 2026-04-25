@@ -19,10 +19,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-Route::middleware(['auth', 'can:manage-product'])->group(function () {
+// menginisialisasi route membuat endpoint untuk di browser
+Route::middleware(['auth', 'can:manage-category'])->group(function () {
     Route::resource('category', \App\Http\Controllers\CategoryController::class)->except(['show']);
+});
 
+Route::middleware(['auth'])->group(function () {
     Route::get('/product', [ProductController::class, 'index'])->name('product.index');
     Route::post('/product', [ProductController::class, 'store'])->name('product.store');
     Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
