@@ -18,10 +18,12 @@
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('About') }}
                     </x-nav-link>
-                    @can('manage-product')
+                    {{-- membuat link untuk product dan category yang hanya bisa diakses oleh admin di komponen navbar --}}
                     <x-nav-link :href="route('product.index')" :active="request()->routeIs('product.index')">
                         {{ __('Product') }}
                     </x-nav-link>
+
+                    @can('manage-category')
                     <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.*')">
                         {{ __('Category') }}
                     </x-nav-link>
@@ -84,10 +86,11 @@
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
                 {{ __('About') }}
             </x-responsive-nav-link>
-            @can('manage-product')
             <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.index')">
                 {{ __('Product') }}
             </x-responsive-nav-link>
+
+            @can('manage-category')
             <x-responsive-nav-link :href="route('category.index')" :active="request()->routeIs('category.*')">
                 {{ __('Category') }}
             </x-responsive-nav-link>
