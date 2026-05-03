@@ -1,9 +1,9 @@
-/**
- * membuat komponen add-product untuk menampilkan tombol "Add Product" yang dapat
-    * digunakan untuk menambahkan produk baru dengan mengarahkan pengguna ke halaman create product
-    * yang dapat digunakan untuk berbagai jenis produk seperti category, product, dll dengan menyesuaikan url dan nama produk
-    * yang akan ditambahkan
-    */
+
+  <!-- membuat komponen add-product untuk menampilkan tombol "Add Product" yang dapat
+  digunakan untuk menambahkan produk baru dengan mengarahkan pengguna ke halaman create product
+  yang dapat digunakan untuk berbagai jenis produk seperti category, product, dll dengan menyesuaikan url dan nama produk
+  yang akan ditambahkan -->
+
 <a href="{{ $url }}"
     class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition duration-150 shadow-sm">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
