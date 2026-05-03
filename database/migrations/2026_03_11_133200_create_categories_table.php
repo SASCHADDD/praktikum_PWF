@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('category', function (Blueprint $table) {
             $table->id();
-            /**menambahkan kolom name dengan tipe data string dan unique 
+            /**menambahkan kolom name dengan tipe data string dan unique
               untuk memastikan bahwa nama kategori tidak boleh sama
              */
             $table->string('name')->unique();

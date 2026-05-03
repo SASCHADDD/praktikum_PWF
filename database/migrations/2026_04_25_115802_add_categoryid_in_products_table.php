@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        # menambahkan kolom category_id dan menghubungkan dengan tabel category dengan foreign key di tabel products
+        // menambahkan kolom category_id dan menghubungkan dengan tabel category dengan foreign key di tabel products
         Schema::table('products', function (Blueprint $table) {
             $table->foreignId('category_id')->nullable()->after('user_id')->constrained('category')->cascadeOnDelete();
         });
