@@ -13,6 +13,7 @@ class EditButton extends Component
      */
     public function __construct(
         public string $url,
+        public string $label = '',
     ) {}
 
     /**
