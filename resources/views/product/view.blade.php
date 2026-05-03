@@ -44,10 +44,10 @@
                         <div class="flex items-center gap-2">
 
                             {{-- Edit --}}
-                            <x-edit-button url="{{ route('product.edit', $product) }}" />
+                            <x-edit-button url="{{ route('product.edit', $product) }}" label="Edit" />
 
                             {{-- Delete --}}
-                            <x-delete-button url="{{ route('product.delete', $product->id) }}" />
+                            <x-delete-button url="{{ route('product.delete', $product->id) }}" label="Delete" />
 
                         </div>
                     </div>
